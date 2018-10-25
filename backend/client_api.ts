@@ -1,18 +1,16 @@
 import axios, {AxiosError, AxiosInstance, AxiosRequestConfig, CancelToken, CancelTokenSource} from 'axios'
-// import api from './rest'
 import {AppError} from 'models/app_error'
 import AuthManager from "./auth"
 import {serviceInstance} from "./rest"
+import {Config} from "../models/app_config"
 
 export default class ApiClient {
     url: string
     authManager: AuthManager
     axiosInstance: AxiosInstance
-    // cancelSources stores request function axios CancelTokenSource
-    // and used to cancel them
     cancelSources: { [name: string]: CancelTokenSource }
 
-    constructor(config: any, authManager: AuthManager) {
+    constructor(config: Config, authManager: AuthManager) {
         this.url = config.apiUrl
         this.authManager = authManager
         this.cancelSources = {}
@@ -54,32 +52,3 @@ export default class ApiClient {
             })
     }
 }
-
-
-
-
-
-
-// export function getShipmentList(request: GetShipmentListRequest) {
-//     return newRequest<GetShipmentListResponse>('/GetShipmentList', request, 'getShipmentList')
-// }
-//
-// export function getShipmentSingle(request: GetShipmentSingleRequest) {
-//     return newRequest<GetShipmentSingleResponse>('/GetShipmentSingle', request)
-// }
-//
-// export function getTransactionList(request: GetTransactionListRequest) {
-//     return newRequest<GetTransactionListResponse>('/GetTransactionList', request, 'getTransactionList')
-// }
-//
-// export function getTransactionSingle(request: GetTransactionSingleRequest) {
-//     return newRequest<GetTransactionSingleResponse>('/GetTransactionSingle', request, 'getTransactionSingle')
-// }
-//
-// export function getWarehouseEntryList(request: GetWarehouseEntryListRequest) {
-//     return newRequest<GetWarehouseEntryListResponse>('/GetWarehouseEntryList', request, 'getWarehouseEntryList')
-// }
-//
-// export function getWarehouseEntrySingle(request: GetWarehouseEntrySingleRequest) {
-//     return newRequest<GetWarehouseEntrySingleResponse>('/GetWarehouseEntrySingle', request, 'getWarehouseEntrySingle')
-// }
