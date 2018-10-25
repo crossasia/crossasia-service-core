@@ -14,7 +14,7 @@ export default class AuthManager {
 
     constructor(config: Config) {
         this.authTokenKey = config.authTokenKey
-        this.axiosInstance = authServiceInstance(config, this)
+        this.axiosInstance = authServiceInstance(config)
     }
 
     getToken() {
