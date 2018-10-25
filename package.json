@@ -1,10 +1,11 @@
 {
   "name": "@crossasia/crossasia-service-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gostruct": "tscriptify -package=bitbucket.org/amanbolat/caconsole/auth/model -target=./models/user.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/auth/model/user.go"
+    "gostruct": "tscriptify -package=bitbucket.org/amanbolat/caconsole/auth/model -target=./models/user.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/auth/model/user.go",
+    "publish": "npm publish --registry http://locahost:4873 --access restricted"
   },
   "author": "",
   "license": "ISC",
