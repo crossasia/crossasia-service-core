@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "gostruct": "tscriptify -package=bitbucket.org/amanbolat/caconsole/auth/model -target=./models/user.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/auth/model/user.go",
-    "pub": "npm publish --registry http://locahost:4873 --access restricted --force"
+    "pub": "yarn publish --registry http://locahost:4873 --access restricted"
   },
   "author": "Amanbolat Balabekov",
   "license": "ISC",
