@@ -1,0 +1,14 @@
+
+interface User {
+    id: string
+    Username     string   `json:"username" structs:"username"`
+    Password     string   `json:"password" structs:"-"`
+    PasswordHash string   `json:"-" structs:"-"`
+    IsActive     bool     `json:"active_status" structs:"is_active"`
+    FullName     string   `json:"full_name" structs:"full_name"`
+    FirstName    string   `json:"first_name" structs:"first_name"`
+    LastName     string   `json:"last_name" structs:"last_name"`
+    Email        string   `json:"email" structs:"email"`
+    Role         Role     `json:"role" structs:"role"`
+    UserInfo     UserInfo `json:"user_info" structs:"user_info"`
+}

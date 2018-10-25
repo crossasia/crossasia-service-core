@@ -1,0 +1,17 @@
+{
+  "name": "@crossasia/crossasia-service-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gostruct": "tscriptify -package=bitbucket.org/amanbolat/caconsole/auth/model -target=./models/user.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/auth/model/user.go"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.117",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11",
+    "vue": "^2.5.17"
+  }
+}
