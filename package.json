@@ -1,13 +1,13 @@
 {
   "name": "@crossasia/crossasia-service-core",
-  "version": "1.1.0",
-  "description": "",
+  "version": "1.1.1",
+  "description": "crossasia web services frontend core",
   "main": "index.js",
   "scripts": {
     "gostruct": "tscriptify -package=bitbucket.org/amanbolat/caconsole/auth/model -target=./models/user.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/auth/model/user.go",
-    "publish": "npm publish --registry http://locahost:4873 --access restricted"
+    "pub": "npm publish --registry http://locahost:4873 --access restricted --force"
   },
-  "author": "",
+  "author": "Amanbolat Balabekov",
   "license": "ISC",
   "dependencies": {
     "@types/lodash": "^4.14.117",
