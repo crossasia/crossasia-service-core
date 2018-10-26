@@ -1,8 +1,8 @@
 import axios, {AxiosError, AxiosRequestConfig} from 'axios'
 import snakeCase from 'lodash/snakeCase'
 import eventBust from '../utils/event_bus'
-import AuthManager from "./auth"
-import {Config} from "../models/app_config"
+import AuthManager from './auth'
+import {Config} from '../models/app_config'
 
 function axiosConfig(config: Config): AxiosRequestConfig {
     return {

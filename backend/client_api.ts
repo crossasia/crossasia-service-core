@@ -1,5 +1,5 @@
 import axios, {AxiosError, AxiosInstance, AxiosRequestConfig, CancelToken, CancelTokenSource} from 'axios'
-import {AppError} from 'models/app_error'
+import {AppError} from '../models/app_error'
 import AuthManager from "./auth"
 import {serviceInstance} from "./rest"
 import {Config} from "../models/app_config"

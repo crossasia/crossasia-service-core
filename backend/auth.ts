@@ -1,8 +1,8 @@
 import {AxiosError, AxiosInstance} from 'axios'
 import {authServiceInstance} from './rest'
-import {AppError} from 'models/app_error'
+import {AppError} from '../models/app_error'
 import {User} from '../models/user'
-import {Config} from "../models/app_config"
+import {Config} from '../models/app_config'
 
 export interface AuthResponse {
     token: string
