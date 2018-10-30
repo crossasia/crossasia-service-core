@@ -5,6 +5,7 @@
     "m3": "{val} м<sup><small>3</small></sup>",
     "kgm3": "{val} кг/м<sup><small>3</small></sup>"
   },
+  "balance": "Баланс",
   "kg": "кг",
   "m3": "м<sup><small>3</small></sup>",
   "kgm3": "кг/м<sup><small>3</small></sup>",
@@ -50,10 +51,7 @@
   "cancel": "Отмена",
   "ok": "OK",
   "create": "Создать",
-  "basic_info": [
-    "Базовая информация",
-    "Основная информация"
-  ],
+  "basic_info": "Основная информация",
   "customer_accounting": "Взаиморасчеты с клиентом",
   "partner_accounting": "Взаиморасчеты с партнером",
   "receive_shipment_accept_question": "<p>Вы уверены, что получили груз {val} ?</p><p>Не забудьте проверить состояние и вес груза!</p>",

@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c65f5e76-f6d2-40ad-98b2-22f8cb4e631c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/amanbolat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/amanbolat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locales/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/ru.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locales/zh.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/zh.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/follow-redirects/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/is-buffer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-buffer/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tslib/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tslib/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +26,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="3" />
+          <entry key="gitignore" value="4" />
           <entry key="json" value="16" />
           <entry key="log" value="1" />
           <entry key="md" value="1" />
@@ -48,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Git file" value="3" />
+          <entry key="Git file" value="4" />
           <entry key="JSON" value="13" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -60,16 +49,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="4" />
-          <entry key="json" value="322" />
+          <entry key="gitignore" value="5" />
+          <entry key="json" value="361" />
           <entry key="ts" value="838" />
           <entry key="vue" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Git file" value="4" />
-          <entry key="JSON" value="319" />
+          <entry key="Git file" value="5" />
+          <entry key="JSON" value="358" />
           <entry key="TypeScript" value="838" />
           <entry key="Vue.js" value="63" />
           <entry key="tsconfig" value="3" />
@@ -87,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locales/ru.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4636">
-              <caret line="352" column="1" lean-forward="true" selection-start-line="352" selection-start-column="1" selection-end-line="352" selection-end-column="1" />
+            <state relative-caret-position="965">
+              <caret line="137" column="42" lean-forward="true" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
               <folding>
                 <element signature="n#!!block;n#el#0;n#!!top" />
               </folding>
@@ -99,10 +88,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/locales/zh.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247">
-              <caret line="262" column="4" selection-start-line="262" selection-start-column="4" selection-end-line="262" selection-end-column="4" />
+            <state relative-caret-position="219">
+              <caret line="113" column="21" lean-forward="true" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
               <folding>
-                <element signature="n#!!block;n#shipment#0;n#!!top" />
                 <element signature="n#!!block;n#el#0;n#!!top" />
               </folding>
             </state>
@@ -118,6 +106,12 @@
       <find>login</find>
       <find>photos</find>
       <find>recipient</find>
+      <find>balance</find>
+      <find>unit_loads</find>
+      <find>ship</find>
+      <find>shipment</find>
+      <find>recipie</find>
+      <find>unit_load</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,7 +128,6 @@
         <option value="$PROJECT_DIR$/backend/rest.ts" />
         <option value="$PROJECT_DIR$/models/app_error.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/backend/auth.ts" />
         <option value="$PROJECT_DIR$/components/layout/Layout.vue" />
         <option value="$PROJECT_DIR$/style/sidebar.scss" />
@@ -143,6 +136,7 @@
         <option value="$PROJECT_DIR$/components/layout/TagsView.vue" />
         <option value="$PROJECT_DIR$/components/layout/ResizeMixin.ts" />
         <option value="$PROJECT_DIR$/components/layout/Sidebar.vue" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/locales/ru.json" />
         <option value="$PROJECT_DIR$/locales/zh.json" />
       </list>
@@ -299,18 +293,18 @@
       <option name="presentableId" value="Default" />
       <updated>1540464232405</updated>
       <workItem from="1540464234502" duration="5896000" />
-      <workItem from="1540484160207" duration="19220000" />
+      <workItem from="1540484160207" duration="20459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25116000" />
+    <option name="totallyTimeSpent" value="26355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="2560" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24970461" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24970461" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -322,8 +316,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="9" visible="true" weight="0.32997987" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3028169" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32997987" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3028169" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" x="0" y="0" width="590" height="880" id="Documentation" side_tool="true" weight="0.32962668" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -439,13 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="86" column="20" lean-forward="true" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -568,10 +555,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/locales/ru.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4636">
-          <caret line="352" column="1" lean-forward="true" selection-start-line="352" selection-start-column="1" selection-end-line="352" selection-end-column="1" />
+        <state relative-caret-position="965">
+          <caret line="137" column="42" lean-forward="true" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
           <folding>
             <element signature="n#!!block;n#el#0;n#!!top" />
           </folding>
@@ -580,10 +574,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/locales/zh.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="262" column="4" selection-start-line="262" selection-start-column="4" selection-end-line="262" selection-end-column="4" />
+        <state relative-caret-position="219">
+          <caret line="113" column="21" lean-forward="true" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
           <folding>
-            <element signature="n#!!block;n#shipment#0;n#!!top" />
             <element signature="n#!!block;n#el#0;n#!!top" />
           </folding>
         </state>

@@ -5,6 +5,7 @@
     "kgm3": "{val} kg/m<sup><small>3</small></sup>",
     "m3": "{val} m<sup><small>3</small></sup>"
   },
+  "balance": "Баланс",
   "kg": "kg",
   "m3": "m<sup><small>3</small></sup>",
   "kgm3": "kg/m<sup><small>3</small></sup>",
@@ -110,6 +111,7 @@
     "preparation": "待发",
     "prepayment": "垫付",
     "recipient": "收货人",
+    "unit_loads": "货物明细",
     "sender": "发货人",
     "sent_out": "已发货",
     "total_for_payment": "运费总计",
