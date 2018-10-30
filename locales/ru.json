@@ -2,15 +2,15 @@
   "cross_asia": "Кросс Азия",
   "unit": {
     "kg": "{val} кг",
-    "m3": "{val} м<sup><small>3<\/small><\/sup>",
-    "kgm3": "{val} кг\/м<sup><small>3<\/small><\/sup>"
+    "m3": "{val} м<sup><small>3</small></sup>",
+    "kgm3": "{val} кг/м<sup><small>3</small></sup>"
   },
   "kg": "кг",
-  "m3": "м<sup><small>3<\/small><\/sup>",
-  "kgm3": "кг\/м<sup><small>3<\/small><\/sup>",
+  "m3": "м<sup><small>3</small></sup>",
+  "kgm3": "кг/м<sup><small>3</small></sup>",
   "on_the_way_to_tp": "На пути к ПП",
   "delivered_to_tp": "Доставлен в ПП",
-  "delivered_to_recipient": "Выдан\/переправлен",
+  "delivered_to_recipient": "Выдан переправлен",
   "unpaid": "Не оплачен",
   "on_credit": "В кредит",
   "paid": "Оплачен",
@@ -50,12 +50,15 @@
   "cancel": "Отмена",
   "ok": "OK",
   "create": "Создать",
-  "basic_info": "Базовая информация",
+  "basic_info": [
+    "Базовая информация",
+    "Основная информация"
+  ],
   "customer_accounting": "Взаиморасчеты с клиентом",
   "partner_accounting": "Взаиморасчеты с партнером",
-  "receive_shipment_accept_question": "<p>Вы уверены, что получили груз {val} ?<\/p><p>Не забудьте проверить состояние и вес груза!<\/p>",
+  "receive_shipment_accept_question": "<p>Вы уверены, что получили груз {val} ?</p><p>Не забудьте проверить состояние и вес груза!</p>",
   "transfer_shipment_attention": "ВНИМАНИЕ! Требуется оплата от клиента",
-  "transfer_shipment_is_transferable": "Груз готов к выдаче\/переправке!",
+  "transfer_shipment_is_transferable": "Груз готов к выдаче/переправке!",
   "receive_shipment_btn": "Получить груз",
   "transfer_shipment_btn": "Выдать груз",
   "notes": "Заметки",
@@ -95,23 +98,63 @@
     "recipient": "Получатель",
     "unit_loads": "Состав груза",
     "consolidation": "Консолидация",
-    "entries": "Посылки",
+    "entries": "Поступления",
     "payment_status": "Статус оплаты",
     "payment_method": "Метод оплаты",
-    "expense": "Себестоимость"
+    "expense": "Себестоимость",
+    "common_shipment": "Обычный",
+    "consolidation_shipment": "Консолидация",
+    "customs_clearance": "Таможенная очистка",
+    "date_created": "Дата создания",
+    "delivered_to_recipient": "Выдан переправлен",
+    "delivered_to_tp": "Доставлен в ПП",
+    "invalid_status": "Неверный статус",
+    "legal_entity_transfer": "Перевод от юр. лица",
+    "on_credit": "В кредит",
+    "on_delivery": "При получении",
+    "on_the_way_to_tp": "На пути к ПП",
+    "other": "Другой",
+    "packed": "Упакован",
+    "paid": "Оплачен",
+    "personal_transfer": "Перевод от физ. лица",
+    "planning": "Планирование",
+    "preparation": "Подготовка",
+    "sender": "Отправитель",
+    "sent_out": "Отправлен",
+    "undefined": "",
+    "details": "Детали груза",
+    "unpaid": "Не оплачен",
+    "transport_method": "Способ доставки",
+    "package_method": "Способ упаковки",
+    "air": "Авиа",
+    "auto": "Авто",
+    "train": "Ж/Д",
+    "express": "Экспресс",
+    "sea": "Море",
+    "local": "Внутренняя",
+    "package_none": "Нет",
+    "package_bag": "Мешок",
+    "package_standard": "Стандартная",
+    "package_carton": "Картон",
+    "package_foam": "Пенопласт",
+    "package_carton_foam": "Картон + пенопласт",
+    "package_wooden_crate": "Обрешетка",
+    "package_wooden_crate_foam": "Обрешетка + пенопласт",
+    "package_wooden_box": "Дер. ящик",
+    "package_wooden_box_foam": "Дер. ящик + пенопласт"
   },
   "unit_load": {
     "dimension": "Габариты"
   },
   "recipient": {
-    "name": "Ф.И.О/Наименование",
-    "phone_number": "Номер тел.",
+    "address": "Адрес",
     "city": "Город",
-    "address": "Адрес"
+    "name": "Ф.И.О/Наименование",
+    "phone_number": "Номер тел."
   },
   "photos": "Фотографии",
   "message": {
-    "languageChanged": "Русский язык"
+    "languageChanged": "Язык успешно изменен"
   },
   "el": {
     "colorpicker": {
@@ -184,7 +227,7 @@
     },
     "pagination": {
       "goto": "Перейти",
-      "pagesize": " на странице",
+      "pagesize": " записей",
       "total": "Всего {total}",
       "pageClassifier": ""
     },
@@ -223,10 +266,88 @@
     }
   },
   "axios": {
-    "network_error": "Ошибка подключения к интернету"
+    "network_error": "Ошибка в соединении"
   },
   "auth": {
     "session_expired": "Сессия просрочена",
     "need_login": "Вам требуется пройти авторизацию"
+  },
+  "error_title": "Ошибка",
+  "auth_service": {
+    "need_login": "Требуется повторная авторизация",
+    "wrong_credentials": "Неправильное имя пользователя или пароль",
+    "invalid_session": "Сессия просрочена",
+    "internal_error": "Ошибка сервер",
+    "invalid_token": "Ошибка в токене"
+  },
+  "loginRules": {
+    "username": "Пожалуйста введите имя пользователя",
+    "password": "Пожалуйста введите пароль"
+  },
+  "crossasia": "Кросс Азия",
+  "status": "Статус",
+  "accounting": "Взаиморасчеты",
+  "total_records": "Всего записей",
+  "id": "ИН",
+  "logout": "Выйти",
+  "login": {
+    "logIn": "Войти",
+    "password": "Пароль",
+    "username": "Имя пользователя"
+  },
+  "personalConsole": "Личный кабинет",
+  "route": {
+    "dashboard": "Общая панель",
+    "entryList": "Склад",
+    "login": "Вход в личный кабинет",
+    "notFound": "404",
+    "shipmentForm": "Отправка",
+    "shipmentList": "Отправки",
+    "transactionForm": "Транзакция",
+    "transactionList": "Взаимарасчеты",
+    "entryForm": "Поступление"
+  },
+  "entry": {
+    "id": "ИН",
+    "date_of_entry": "Дата поступления",
+    "source": "Источник",
+    "track_code": "Трек-код",
+    "box_qty": "Кол-во мест",
+    "pcs_qty": "Кол-во единиц",
+    "product_name": "Наименования",
+    "in_shipment": "В отправке",
+    "status": "Статус",
+    "warehouse": "Склад"
+  },
+  "transaction": {
+    "id": "ИН",
+    "date": "Дата создания",
+    "type": "Тип",
+    "category": "Категория",
+    "amount": "Сумма",
+    "category_prepayment": "Предоплата",
+    "category_internal_transfer": "Внутр. перевод",
+    "category_payment_from_customer": "Оплата клиента",
+    "category_payment_to_partner": "Оплата партнерам",
+    "category_refund_cash_to_customer": "Возврат наличных клиенту",
+    "category_refund_from_partner": "Возврат от партнера",
+    "category_salary": "Зарплата",
+    "category_other_expense": "Другие затраты",
+    "category_payable": "Подлежащий уплате",
+    "category_receivable": "Подлежащий получению",
+    "category_cash_back": "Бонус",
+    "type_expense": "Расход",
+    "type_income": "Приход",
+    "type_out_flow": "Отчисление",
+    "type_in_flow": "Причисление",
+    "type_wrong": "неизвестно",
+    "status_unapproved": "Подтверждено",
+    "status_approved": "Не подтверждено",
+    "undefined": ""
+  },
+  "tagsView": {
+    "close": "Закрыть вкладку",
+    "closeAll": "Закрыть все вкладки",
+    "closeOthers": "Закрыть другие вкладки"
   }
 }

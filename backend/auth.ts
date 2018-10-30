@@ -79,7 +79,8 @@ export default class AuthManager {
             this.deleteUser()
         }).catch((err) => {
             console.log(err)
-            return Promise.reject(err)
+            this.deleteToken()
+            this.deleteUser()
         })
     }
 }
