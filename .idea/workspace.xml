@@ -50,7 +50,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="5" />
-          <entry key="json" value="361" />
+          <entry key="json" value="540" />
           <entry key="ts" value="838" />
           <entry key="vue" value="63" />
         </counts>
@@ -58,7 +58,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="5" />
-          <entry key="JSON" value="358" />
+          <entry key="JSON" value="537" />
           <entry key="TypeScript" value="838" />
           <entry key="Vue.js" value="63" />
           <entry key="tsconfig" value="3" />
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locales/ru.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="965">
-              <caret line="137" column="42" lean-forward="true" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
+            <state relative-caret-position="152">
+              <caret line="8" column="35" selection-start-line="8" selection-end-line="9" />
               <folding>
                 <element signature="n#!!block;n#el#0;n#!!top" />
               </folding>
@@ -88,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/locales/zh.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="113" column="21" lean-forward="true" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+            <state relative-caret-position="171">
+              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding>
                 <element signature="n#!!block;n#el#0;n#!!top" />
               </folding>
@@ -111,6 +111,7 @@
       <find>ship</find>
       <find>shipment</find>
       <find>recipie</find>
+      <find>exchange</find>
       <find>unit_load</find>
     </findStrings>
   </component>
@@ -293,12 +294,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540464232405</updated>
       <workItem from="1540464234502" duration="5896000" />
-      <workItem from="1540484160207" duration="20459000" />
+      <workItem from="1540484160207" duration="22874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26355000" />
+    <option name="totallyTimeSpent" value="28770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="2560" height="1080" extended-state="0" />
@@ -564,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/locales/ru.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="965">
-          <caret line="137" column="42" lean-forward="true" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
+        <state relative-caret-position="152">
+          <caret line="8" column="35" selection-start-line="8" selection-end-line="9" />
           <folding>
             <element signature="n#!!block;n#el#0;n#!!top" />
           </folding>
@@ -574,8 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/locales/zh.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="113" column="21" lean-forward="true" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+        <state relative-caret-position="171">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding>
             <element signature="n#!!block;n#el#0;n#!!top" />
           </folding>

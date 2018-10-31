@@ -5,6 +5,8 @@
     "kgm3": "{val} kg/m<sup><small>3</small></sup>",
     "m3": "{val} m<sup><small>3</small></sup>"
   },
+  "update_needed": "需要更新",
+  "update_needed_detailed": "APP将要更新。更新后页面会刷新",
   "balance": "Баланс",
   "kg": "kg",
   "m3": "m<sup><small>3</small></sup>",

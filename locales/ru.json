@@ -5,6 +5,8 @@
     "m3": "{val} м<sup><small>3</small></sup>",
     "kgm3": "{val} кг/м<sup><small>3</small></sup>"
   },
+  "update_needed": "Требуется обновление",
+  "update_needed_detailed": "Приложение будет обновлено после чего страница обновится.",
   "balance": "Баланс",
   "kg": "кг",
   "m3": "м<sup><small>3</small></sup>",
