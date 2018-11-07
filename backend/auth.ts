@@ -33,6 +33,10 @@ export default class AuthManager {
         return String(this.getToken()) !== '' && this.getToken() !== null
     }
 
+    loggedIn() {
+        return !!this.getToken()
+    }
+
     saveUser(user: User) {
         window.localStorage.setItem('user', JSON.stringify(user))
     }
