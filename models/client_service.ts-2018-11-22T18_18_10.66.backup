@@ -376,22 +376,3 @@ export interface GetTransactionListResponse {
 
     //[end]
 }
-export interface GetAccountingSummaryRequest {
-    //[GetAccountingSummaryRequest:]
-
-
-    //[end]
-}
-export interface GetAccountingSummaryResponse {
-    balance: Money;
-    total_invoice: Money;
-    total_payment: Money;
-    total_credit: Money;
-    total_bonus: Money;
-    total_refund: Money;
-    total_payed_bonus: Money;
-    //[GetAccountingSummaryResponse:]
-
-
-    //[end]
-}
