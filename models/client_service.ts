@@ -126,7 +126,7 @@ export interface Sender {
 
 export interface Money {
     //[Money:]
-    Amount: number;
+    amount: number;
 
     //[end]
 }
