@@ -112,7 +112,7 @@
     "consolidation_shipment": "Консолидация",
     "customs_clearance": "Таможенная очистка",
     "date_created": "Дата создания",
-    "delivered_to_recipient": "Выдан переправлен",
+    "delivered_to_recipient": "Выдан получателю",
     "delivered_to_tp": "Доставлен в ПП",
     "invalid_status": "Неверный статус",
     "legal_entity_transfer": "Перевод от юр. лица",
