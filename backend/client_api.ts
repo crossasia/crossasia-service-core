@@ -6,11 +6,11 @@ import {Config} from "../models/app_config"
 
 export default class ApiClient {
     url: string
-    authManager: AuthManager
+    authManager?: AuthManager
     axiosInstance: AxiosInstance
     cancelSources: { [name: string]: CancelTokenSource }
 
-    constructor(config: Config, authManager: AuthManager) {
+    constructor(config: Config, authManager?: AuthManager) {
         this.url = config.apiUrl
         this.authManager = authManager
         this.cancelSources = {}
@@ -19,8 +19,7 @@ export default class ApiClient {
 
     axiosConfig = (cancelToken?: CancelToken): AxiosRequestConfig => {
         return {
-            // baseURL: this.url + 'client',
-            headers: {Authorization: `Token ${this.authManager.getToken()}`},
+            headers: this.authManager ? {Authorization: `Token ${this.authManager.getToken()}`} : {},
             cancelToken
         }
     }
