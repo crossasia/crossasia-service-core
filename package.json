@@ -1,12 +1,13 @@
 {
   "name": "@crossasia/crossasia-service-core",
-  "version": "1.1.20",
+  "version": "1.1.21",
   "description": "crossasia web services frontend core",
   "main": "index.js",
   "scripts": {
     "gen-user": "tscriptify -package=bitbucket.org/amanbolat/caconsole/auth/model -target=./models/user.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/auth/model/user.go",
     "gen-client-service": "tscriptify -package=bitbucket.org/amanbolat/caconsole/client_service/server -target=./models/client_service.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/client_service/server/service.go",
     "gen-transfer-service": "tscriptify -package=bitbucket.org/amanbolat/caconsole/transfer_service/server -target=./models/transfer_service.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/transfer_service/server/service.go",
+    "gen-public-service": "tscriptify -package=bitbucket.org/amanbolat/caconsole/public_api_service/server -target=./models/public_service.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/public_api_service/server/service.go",
     "pub": "npm publish"
   },
   "publishConfig": {
