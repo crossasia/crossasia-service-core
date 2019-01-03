@@ -1,4 +1,11 @@
 {
+  "lost_password": "忘记密码?",
+  "input_your_email": "输入您的邮箱",
+  "invalid_email": "输入的邮箱有误",
+  "new_password": "输入新密码",
+  "new_password_again": "再次输入新密码",
+  "change_password": "修改密码",
+  "change_password_succeed": "您的密码修改成功",
   "cross_asia": "穿越亚洲",
   "unit": {
     "kg": "{val} kg",

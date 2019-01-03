@@ -1,4 +1,11 @@
 {
+  "lost_password": "Забыли пароль?",
+  "input_your_email": "Введите ваш email",
+  "invalid_email": "Email введен неверно",
+  "new_password": "Введите новый пароль",
+  "new_password_again": "Введите новый пароль еще раз",
+  "change_password": "Изменить пароль",
+  "change_password_succeed": "Ваш пароль успешно изменен",
   "cross_asia": "Кросс Азия",
   "unit": {
     "kg": "{val} кг",
