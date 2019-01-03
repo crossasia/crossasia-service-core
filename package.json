@@ -11,7 +11,7 @@
     "pub": "npm publish"
   },
   "publishConfig": {
-    "registry": "http://locahost:4873"
+    "registry": "https://npm.crossasia.ru"
   },
   "author": "Amanbolat Balabekov",
   "license": "ISC",
