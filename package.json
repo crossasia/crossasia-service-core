@@ -11,6 +11,9 @@
     "gen-public-service": "tscriptify -package=bitbucket.org/amanbolat/caconsole/public_api_service/server -target=./models/public_service.ts $GOPATH/src/bitbucket.org/amanbolat/caconsole/public_api_service/server/service.go",
     "pub": "npm publish"
   },
+  "publishConfig": {
+    "registry": "https://npm.crossasia.ru"
+  },
   "author": "Amanbolat Balabekov",
   "license": "ISC",
   "dependencies": {
