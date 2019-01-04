@@ -1,14 +1,14 @@
 import axios, {AxiosError, AxiosInstance, AxiosRequestConfig, CancelToken, CancelTokenSource} from 'axios'
 import {AppError} from '../models/app_error'
-import AuthManager from "./auth"
-import {serviceInstance} from "./rest"
-import {Config} from "../models/app_config"
+import AuthManager from './auth'
+import {serviceInstance} from './rest'
+import {Config} from '../models/app_config'
 
 export default class ApiClient {
-    url: string
-    authManager?: AuthManager
-    axiosInstance: AxiosInstance
-    cancelSources: { [name: string]: CancelTokenSource }
+    protected url: string
+    protected authManager?: AuthManager
+    protected axiosInstance: AxiosInstance
+    protected cancelSources: { [name: string]: CancelTokenSource }
 
     constructor(config: Config, authManager?: AuthManager) {
         this.url = config.apiUrl
@@ -17,14 +17,14 @@ export default class ApiClient {
         this.axiosInstance = serviceInstance(config, authManager)
     }
 
-    axiosConfig = (cancelToken?: CancelToken): AxiosRequestConfig => {
+    private axiosConfig = (cancelToken?: CancelToken): AxiosRequestConfig => {
         return {
             headers: this.authManager ? {Authorization: `Token ${this.authManager.getToken()}`} : {},
             cancelToken
         }
     }
 
-    newRequest<ApiResponse>(url: string, data?: any, fnName?: string): Promise<ApiResponse> {
+    public newRequest<ApiResponse>(url: string, data?: any, fnName?: string): Promise<ApiResponse> {
         const cfg = this.axiosConfig()
 
         if (fnName && fnName !== '') {

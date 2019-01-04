@@ -9,39 +9,39 @@ export interface AuthResponse {
 }
 
 export default class AuthManager {
-    authTokenKey: string
-    axiosInstance: AxiosInstance
+    protected authTokenKey: string
+    protected axiosInstance: AxiosInstance
 
     constructor(config: Config) {
         this.authTokenKey = config.authTokenKey
         this.axiosInstance = authServiceInstance(config)
     }
 
-    getToken() {
+    public getToken() {
         return window.localStorage.getItem(this.authTokenKey)
     }
 
-    setToken(v: string) {
+    public setToken(v: string) {
         window.localStorage.setItem(this.authTokenKey, v)
     }
 
-    deleteToken() {
+    public deleteToken() {
         window.localStorage.removeItem(this.authTokenKey)
     }
 
-    isAuthenticated() {
+    public isAuthenticated() {
         return String(this.getToken()) !== '' && this.getToken() !== null
     }
 
-    loggedIn() {
+    public loggedIn() {
         return !!this.getToken()
     }
 
-    saveUser(user: User) {
+    public saveUser(user: User) {
         window.localStorage.setItem('user', JSON.stringify(user))
     }
 
-    getUser(): User | null {
+    public getUser(): User | null {
         const u = window.localStorage.getItem('user')
         if (u) {
             return JSON.parse(u)
@@ -49,11 +49,11 @@ export default class AuthManager {
         return null
     }
 
-    deleteUser() {
+    public deleteUser() {
         window.localStorage.removeItem('user')
     }
 
-    login(user: string, pass: string): Promise<AuthResponse> {
+    public login(user: string, pass: string): Promise<AuthResponse> {
         const creds = {
             username: user,
             password: pass
@@ -75,7 +75,7 @@ export default class AuthManager {
             })
     }
 
-    logout() {
+    public logout() {
         return this.axiosInstance.post('/auth/logout', null, {
             headers: {Authorization: `Token ${this.getToken()}`}
         }).then(() => {

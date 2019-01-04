@@ -15,13 +15,13 @@ function axiosConfig(config: Config): AxiosRequestConfig {
 }
 
 export function serviceInstance(config: Config, authManager?: AuthManager) {
-    let instance = axios.create(axiosConfig(config))
+    const instance = axios.create(axiosConfig(config))
 
     instance.interceptors.response.use(undefined, (error: AxiosError) => {
         return new Promise((resolve, reject) => {
             console.log(error)
             if (error.response && error.response.status === 401) {
-                if (authManager){
+                if (authManager) {
                     authManager.deleteToken()
                 }
                 eventBust.$emit('unauthorized_request')
@@ -38,7 +38,7 @@ export function serviceInstance(config: Config, authManager?: AuthManager) {
 }
 
 export function authServiceInstance(config: Config) {
-    let instance = axios.create(axiosConfig(config))
+    const instance = axios.create(axiosConfig(config))
 
     instance.interceptors.response.use(undefined, (error: AxiosError) => {
         return new Promise((resolve, reject) => {

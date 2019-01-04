@@ -1,12 +1,6 @@
 /* Do not change, this code is generated from Golang structs */
 
 
-export interface Service {
-    //[Service:]
-
-
-    //[end]
-}
 export interface SortField {
     name: string;
     descending: boolean;

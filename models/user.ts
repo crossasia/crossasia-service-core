@@ -10,6 +10,7 @@ export interface User {
     first_name: string;
     last_name: string;
     email: string;
+    language: string;
     role: number;
     user_info: any;
     //[User:]
