@@ -11,3 +11,12 @@ steps:
         from_secret: crossasia_npm_token
     commands:
       - echo "//npm.crossasia.ru/:_authToken=\"$NPM_TOKEN\"" >> .npmrc
+
+  - name: npm
+    image: plugins/npm
+    settings:
+      username: amanbolat
+      token:
+        from_secret: crossasia_npm_token
+      email: amanbolat@crossasia.ru
+      registry: https://npm.crossasia.ru

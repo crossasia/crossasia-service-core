@@ -17,13 +17,6 @@ export default class ApiClient {
         this.axiosInstance = serviceInstance(config, authManager)
     }
 
-    private axiosConfig = (cancelToken?: CancelToken): AxiosRequestConfig => {
-        return {
-            headers: this.authManager ? {Authorization: `Token ${this.authManager.getToken()}`} : {},
-            cancelToken
-        }
-    }
-
     public newRequest<ApiResponse>(url: string, data?: any, fnName?: string): Promise<ApiResponse> {
         const cfg = this.axiosConfig()
 
@@ -49,5 +42,12 @@ export default class ApiClient {
 
                 return Promise.reject(err)
             })
+    }
+
+    private axiosConfig = (cancelToken?: CancelToken): AxiosRequestConfig => {
+        return {
+            headers: this.authManager ? {Authorization: `Token ${this.authManager.getToken()}`} : {},
+            cancelToken
+        }
     }
 }
