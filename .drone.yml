@@ -3,15 +3,6 @@ kind: pipeline
 name: publish
 
 steps:
-  - name: publish to crossasia repo
-    image: node:10.12
-    environment:
-      ENV: dev
-      NPM_TOKEN:
-        from_secret: crossasia_npm_token
-    commands:
-      - echo "//npm.crossasia.ru/:_authToken=\"$NPM_TOKEN\"" >> .npmrc
-
   - name: npm
     image: plugins/npm
     settings:
