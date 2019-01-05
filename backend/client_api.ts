@@ -2,7 +2,6 @@ import axios, {AxiosError, AxiosInstance, AxiosRequestConfig, CancelToken, Cance
 import {AppError} from '../models/app_error'
 import AuthManager from './auth'
 import {serviceInstance} from './rest'
-import {Config} from '../models/app_config'
 
 export default class ApiClient {
     protected url: string
@@ -10,11 +9,11 @@ export default class ApiClient {
     protected axiosInstance: AxiosInstance
     protected cancelSources: { [name: string]: CancelTokenSource }
 
-    constructor(config: Config, authManager?: AuthManager) {
-        this.url = config.apiUrl
+    constructor(baseUrl: string, authManager?: AuthManager) {
+        this.url = baseUrl
         this.authManager = authManager
         this.cancelSources = {}
-        this.axiosInstance = serviceInstance(config, authManager)
+        this.axiosInstance = serviceInstance(baseUrl, authManager)
     }
 
     public newRequest<ApiResponse>(url: string, data?: any, fnName?: string): Promise<ApiResponse> {

@@ -2,11 +2,10 @@ import axios, {AxiosError, AxiosRequestConfig} from 'axios'
 import snakeCase from 'lodash/snakeCase'
 import eventBust from '../utils/event_bus'
 import AuthManager from './auth'
-import {Config} from '../models/app_config'
 
-function axiosConfig(config: Config): AxiosRequestConfig {
+function axiosConfig(baseUrl: string): AxiosRequestConfig {
     return {
-        baseURL: config.apiUrl,
+        baseURL: baseUrl,
         method: 'POST',
         timeout: 30000,
         responseType: 'json',
@@ -14,8 +13,8 @@ function axiosConfig(config: Config): AxiosRequestConfig {
     }
 }
 
-export function serviceInstance(config: Config, authManager?: AuthManager) {
-    const instance = axios.create(axiosConfig(config))
+export function serviceInstance(baseUrl: string, authManager?: AuthManager) {
+    const instance = axios.create(axiosConfig(baseUrl))
 
     instance.interceptors.response.use(undefined, (error: AxiosError) => {
         return new Promise((resolve, reject) => {
@@ -37,8 +36,8 @@ export function serviceInstance(config: Config, authManager?: AuthManager) {
     return instance
 }
 
-export function authServiceInstance(config: Config) {
-    const instance = axios.create(axiosConfig(config))
+export function authServiceInstance(baseUrl: string) {
+    const instance = axios.create(axiosConfig(baseUrl))
 
     instance.interceptors.response.use(undefined, (error: AxiosError) => {
         return new Promise((resolve, reject) => {

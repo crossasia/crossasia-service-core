@@ -2,19 +2,18 @@ import {AxiosError, AxiosInstance} from 'axios'
 import {authServiceInstance} from './rest'
 import {AppError} from '../models/app_error'
 import {User} from '../models/user'
-import {Config} from '../models/app_config'
 
 export interface AuthResponse {
     token: string
 }
 
 export default class AuthManager {
-    protected authTokenKey: string
+    protected authTokenKey: string = 'auth_token'
     protected axiosInstance: AxiosInstance
 
-    constructor(config: Config) {
-        this.authTokenKey = config.authTokenKey
-        this.axiosInstance = authServiceInstance(config)
+    constructor(authTokenKey: string, baseUrl: string) {
+        this.authTokenKey = authTokenKey
+        this.axiosInstance = authServiceInstance(baseUrl)
     }
 
     public getToken() {
