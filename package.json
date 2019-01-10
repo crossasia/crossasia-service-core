@@ -1,6 +1,6 @@
 {
   "name": "@crossasia/crossasia-service-core",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "crossasia web services frontend core",
   "main": "index.js",
   "scripts": {

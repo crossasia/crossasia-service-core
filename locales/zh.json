@@ -8,6 +8,18 @@
   "change_password_succeed": "您的密码修改成功",
   "restore_password_requested": "5分钟您会收到修改密码链接",
   "restore_password_header": "修改账户密码",
+  "passwords_not_match": "两个密码不一样",
+  "password_has_enough_chars": "密码够长",
+  "password_contains_number": "密码包含数字",
+  "password_contains_lowercase": "密码包含小写字母",
+  "password_contains_uppercase": "密码包含大写字母",
+  "user_manager": {
+    "UppercaseLetterMissing": "密码不包含大写字母",
+    "LowercaseLetterMissing": "密码不包含小写字母",
+    "NumberCharMissing": "密码不包含数字",
+    "WrongPasswordLength": "密码不够长"
+  },
+  "my_account": "我的账户",
   "cross_asia": "穿越亚洲",
   "unit": {
     "kg": "{val} kg",
@@ -317,7 +329,8 @@
     "shipmentList": "发货列表",
     "transactionForm": "交易",
     "transactionList": "财务",
-    "entryForm": "入库"
+    "entryForm": "入库",
+    "my_account": "我的账户"
   },
   "entry": {
     "id": "编号",

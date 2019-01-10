@@ -8,6 +8,18 @@
   "change_password_succeed": "Ваш пароль успешно изменен",
   "restore_password_requested": "В течении 5 минут вы получите ссылку на восстановление вашего пароля",
   "restore_password_header": "Восстановление пароля",
+  "passwords_not_match": "Пароли не сходятся",
+  "password_has_enough_chars": "Достаточно длинный пароль",
+  "password_contains_number": "Пароль содержит цифры",
+  "password_contains_lowercase": "Пароль содержит строчные буквы",
+  "password_contains_uppercase": "Пароль содержит заглавные буквы",
+  "user_manager": {
+    "UppercaseLetterMissing": "Пароль не содержит заглавные буквы",
+    "LowercaseLetterMissing": "Пароль содержит строчные буквы",
+    "NumberCharMissing": "Пароль не содержит цифры",
+    "WrongPasswordLength": "Недостаточно длинный пароль"
+  },
+  "my_account": "Мой аккаунт",
   "cross_asia": "Кросс Азия",
   "unit": {
     "kg": "{val} кг",
@@ -320,7 +332,8 @@
     "shipmentList": "Отправки",
     "transactionForm": "Транзакция",
     "transactionList": "Взаиморасчёты",
-    "entryForm": "Поступление"
+    "entryForm": "Поступление",
+    "my_account": "Мой аккаунт"
   },
   "entry": {
     "id": "ИН",
