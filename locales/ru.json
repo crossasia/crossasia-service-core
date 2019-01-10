@@ -7,6 +7,7 @@
   "change_password": "Изменить пароль",
   "change_password_succeed": "Ваш пароль успешно изменен",
   "restore_password_requested": "В течении 5 минут вы получите ссылку на восстановление вашего пароля",
+  "restore_password_header": "Восстановление пароля",
   "cross_asia": "Кросс Азия",
   "unit": {
     "kg": "{val} кг",

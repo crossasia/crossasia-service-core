@@ -7,6 +7,7 @@
   "change_password": "修改密码",
   "change_password_succeed": "您的密码修改成功",
   "restore_password_requested": "5分钟您会收到修改密码链接",
+  "restore_password_header": "修改账户密码",
   "cross_asia": "穿越亚洲",
   "unit": {
     "kg": "{val} kg",
