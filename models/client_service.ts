@@ -389,3 +389,18 @@ export interface GetAccountingSummaryResponse {
 
     //[end]
 }
+export interface ChangePasswordRequest {
+    old_password: string;
+    new_password: string;
+    new_password_check: string;
+    //[ChangePasswordRequest:]
+
+
+    //[end]
+}
+export interface ChangePasswordResponse {
+    //[ChangePasswordResponse:]
+
+
+    //[end]
+}
