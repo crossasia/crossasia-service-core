@@ -330,7 +330,8 @@
     "transactionForm": "交易",
     "transactionList": "财务",
     "entryForm": "入库",
-    "my_account": "我的账户"
+    "my_account": "我的账户",
+    "restorePassword": "找回密码"
   },
   "entry": {
     "id": "编号",
