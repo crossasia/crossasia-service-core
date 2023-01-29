@@ -12,7 +12,7 @@
     "pub": "npm publish"
   },
   "publishConfig": {
-    "registry": "https://npm.crossasia.ru"
+    "registry": "https://npm.pkg.github.com"
   },
   "author": "Amanbolat Balabekov",
   "license": "ISC",
