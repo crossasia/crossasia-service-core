@@ -17,14 +17,22 @@
   "author": "Amanbolat Balabekov",
   "license": "ISC",
   "dependencies": {
-    "@types/lodash": "^4.14.117",
-    "axios": "^0.18.0",
-    "lodash": "^4.17.11",
-    "tslib": "^1.9.3",
-    "vue": "^2.5.17",
-    "vuex": "^3.0.1"
+    "@types/lodash": "^4.14.192",
+    "axios": "^0.18.1",
+    "lodash": "^4.17.21",
+    "tslib": "^1.14.1",
+    "vue": "^2.7.14",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
-    "typescript": "^3.1.3"
+    "typescript": "^3.9.10"
+  },
+  "pnpm": {
+    "overrides": {
+      "axios@<0.21.1": ">=0.21.1",
+      "follow-redirects@<1.14.8": ">=1.14.8",
+      "follow-redirects@<1.14.7": ">=1.14.7",
+      "axios@<0.21.2": ">=0.21.2"
+    }
   }
 }
